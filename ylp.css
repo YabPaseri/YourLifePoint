@@ -1,85 +1,39 @@
-@media only screen and (max-width: 750px) {
-    *{
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: black;
-    }
-    
-    #viewarea
-    {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #intitle
-    {
-        text-align: center;
-        /* color: white; */
-        color: red;
-        font-size: 15vh;
-        font-family: 'VT323', monospace;
-    }
-    
-    #lifepoint
-    {
-        text-align: center;
-        font-size: 45vh;
-        color: chocolate;
-        font-family: 'VT323', monospace;
-    }
-    
-    #sublifepoint
-    {
-        text-align: center;
-        color: white;
-        font-size: 15vh;
-        font-family: 'VT323', monospace;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
 }
 
-@media only screen and (min-width: 751px) {
-    *{
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: black;
-    }
-    
-    #viewarea
-    {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #intitle
-    {
-        text-align: center;
-        color: white;
-        font-size: 15vh;
-        font-family: 'VT323', monospace;
-    }
-    
-    #lifepoint
-    {
-        text-align: center;
-        font-size: 45vh;
-        color: chocolate;
-        font-family: 'VT323', monospace;
-    }
-    
-    #sublifepoint
-    {
-        text-align: center;
-        color: white;
-        font-size: 15vh;
-        font-family: 'VT323', monospace;
-    }
+#viewarea
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#intitle
+{
+    text-align: center;
+    color: white;
+    font-size: 10vw;
+    font-family: 'VT323', monospace;
+}
+
+#lifepoint
+{
+    text-align: center;
+    font-size: 15vw;
+    color: chocolate;
+    font-family: 'VT323', monospace;
+}
+
+#sublifepoint
+{
+    text-align: center;
+    color: white;
+    font-size: 10vw;
+    font-family: 'VT323', monospace;
+}
