@@ -15,11 +15,11 @@ const view = function() {
     let nowu = new Date();
     // viewarea.innerHTML = nowu.toUTCString().slice(0,-3) + '+0900';
     let now = new Date(nowu.toUTCString().slice(0,-3) + '+0900');
-    viewarea.innerHTML = endpoint.toString();
+    // viewarea.innerHTML = endpoint.toString();
     // now.setTime(now.getTime() + 1000*60*60*9);// JSTに変換
     let diff = endpoint.getTime() - now.getTime();
     // viewarea.innerHTML = parseInt((diff/1000));
-    // viewarea.innerHTML = (diff/1000).toFixed(2);
+    viewarea.innerHTML = (diff/1000).toFixed(2);
 
     let sec = parseInt(diff/1000);
     let d = sec/86400 | 0;
