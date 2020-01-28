@@ -11,7 +11,9 @@ const view = function() {
     let endpoint = new Date('2020-01-31T16:45:00+');
     let viewarea = document.getElementById('lifepoint');
     let subviewarea = document.getElementById('sublifepoint');
-    let now = new Date(local_time);
+    let nowu = new Date();
+    let now = new Date(nowu.toUTCString()+'+9:00');
+    // now.setTime(now.getTime() + 1000*60*60*9);// JSTに変換
     let diff = endpoint.getTime() - now.getTime();
     // viewarea.innerHTML = parseInt((diff/1000));
     viewarea.innerHTML = (diff/1000).toFixed(2);
