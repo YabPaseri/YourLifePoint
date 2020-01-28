@@ -5,9 +5,6 @@ function zeroPadding(num,length){
     return ('0000000000' + num).slice(-length);
 }
 
-var elementHtml = document.documentElement;
-var bottom = elementHtml.scrollHeight - elementHtml.clientHeight;
-window.scroll(0, bottom);
 document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
 
 const view = function() {
