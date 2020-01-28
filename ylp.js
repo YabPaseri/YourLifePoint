@@ -13,7 +13,7 @@ const view = function() {
     let subviewarea = document.getElementById('sublifepoint');
     let nowu = new Date();
     viewarea.innerHTML = nowu.toUTCString();
-    let now = new Date(nowu.toUTCString()+'+9:00');
+    let now = new Date(nowu.toUTCString().slice(0,-3) + '+9:00');
     // now.setTime(now.getTime() + 1000*60*60*9);// JSTに変換
     let diff = endpoint.getTime() - now.getTime();
     // viewarea.innerHTML = parseInt((diff/1000));
