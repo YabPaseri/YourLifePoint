@@ -6,6 +6,9 @@ function zeroPadding(num,length){
 }
 
 document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
+var elementHtml = document.documentElement;
+var bottom = elementHtml.scrollHeight - elementHtml.clientHeight;
+window.scroll(0, bottom);
 
 const view = function() {
     let endpoint = new Date('2020-01-31T16:45:00');
