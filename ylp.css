@@ -1,38 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+@media only screen and (max-width: 750px) {
+    *{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+    
+    #viewarea
+    {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #intitle
+    {
+        text-align: center;
+        /* color: white; */
+        color: red;
+        font-size: 15vh;
+        font-family: 'VT323', monospace;
+    }
+    
+    #lifepoint
+    {
+        text-align: center;
+        font-size: 45vh;
+        color: chocolate;
+        font-family: 'VT323', monospace;
+    }
+    
+    #sublifepoint
+    {
+        text-align: center;
+        color: white;
+        font-size: 15vh;
+        font-family: 'VT323', monospace;
+    }
 }
 
-#intitle
-{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 7em;
-    font-family: 'VT323', monospace;
+@media only screen and (min-width: 751px) {
+    *{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+    
+    #viewarea
+    {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #intitle
+    {
+        text-align: center;
+        color: white;
+        font-size: 15vh;
+        font-family: 'VT323', monospace;
+    }
+    
+    #lifepoint
+    {
+        text-align: center;
+        font-size: 45vh;
+        color: chocolate;
+        font-family: 'VT323', monospace;
+    }
+    
+    #sublifepoint
+    {
+        text-align: center;
+        color: white;
+        font-size: 15vh;
+        font-family: 'VT323', monospace;
+    }
 }
 
-#lifepoint
-{
-    width: 100vw;
-    height: 60vh;
-    font-size: 20em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: chocolate;
-    font-family: 'VT323', monospace;
-}
-
-#sublifepoint
-{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 7em;
-    font-family: 'VT323', monospace;
-}
