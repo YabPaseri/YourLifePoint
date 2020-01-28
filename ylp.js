@@ -8,7 +8,7 @@ function zeroPadding(num,length){
 document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
 
 const view = function() {
-    let endpoint = new Date('2020-01-31T16:45:00+0900');
+    let endpoint = new Date('2020-01-31T16:45:00');
     // let endpoint = new Date("Fri, Jan 31, 2020 07:45:00 +0900");
     let viewarea = document.getElementById('lifepoint');
     let subviewarea = document.getElementById('sublifepoint');
