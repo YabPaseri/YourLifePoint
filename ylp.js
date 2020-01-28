@@ -7,7 +7,7 @@ const view = function() {
     let now = new Date();
     let diff = endpoint.getTime() - now.getTime();
     // viewarea.innerHTML = parseInt((diff/1000));
-    viewarea.innerHTML = (diff/1000).toFixed(3);
+    viewarea.innerHTML = (diff/1000).toFixed(2);
 }
 
-setInterval(view, 1);
+setInterval(view, 73);
