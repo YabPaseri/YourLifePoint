@@ -5,6 +5,8 @@ function zeroPadding(num,length){
     return ('0000000000' + num).slice(-length);
 }
 
+document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
+
 const view = function() {
     let endpoint = new Date('2020-01-31T16:45:00');
     let viewarea = document.getElementById('lifepoint');
