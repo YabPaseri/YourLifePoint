@@ -1,13 +1,26 @@
 // let endpoint = new Date('2020-01-31T23:59:59');
 // let viewarea = document.getElementById('viewarea');
 
+function zeroPadding(num,length){
+    return ('0000000000' + num).slice(-length);
+}
+
 const view = function() {
-    let endpoint = new Date('2020-01-31T23:59:59');
+    let endpoint = new Date('2020-01-31T16:45:00');
     let viewarea = document.getElementById('lifepoint');
+    let subviewarea = document.getElementById('sublifepoint');
     let now = new Date();
     let diff = endpoint.getTime() - now.getTime();
     // viewarea.innerHTML = parseInt((diff/1000));
     viewarea.innerHTML = (diff/1000).toFixed(2);
+
+    let sec = parseInt(diff/1000);
+    let d = sec/86400 | 0;
+    let h = sec%86400/3600 | 0;
+    let m = sec%86400%3600/60 | 0;
+    let s = sec%60;
+
+    subviewarea.innerHTML = zeroPadding(d,2) + 'd ' + zeroPadding(h,2) + 'h ' + zeroPadding(m,2) + 'm ' + zeroPadding(s,2) + 's'
 }
 
 setInterval(view, 73);
