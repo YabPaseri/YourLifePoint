@@ -8,15 +8,14 @@ function zeroPadding(num,length){
 document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
 
 const view = function() {
-    // let endpoint = new Date('2020-01-31T16:45:00+0900');
-    let endpoint = new Date("Fri, Jan 31, 2020 07:45:00 +0900");
+    let endpoint = new Date('2020-01-31T16:45:00+0900');
+    // let endpoint = new Date("Fri, Jan 31, 2020 07:45:00 +0900");
     let viewarea = document.getElementById('lifepoint');
     let subviewarea = document.getElementById('sublifepoint');
-    let nowu = new Date();
-    // viewarea.innerHTML = nowu.toUTCString().slice(0,-3) + '+0900';
-    let now = new Date(nowu.toUTCString().slice(0,-3) + '+0900');
+    // let nowu = new Date();
+    // let now = new Date(nowu.toUTCString().slice(0,-3) + '+0900');
     // viewarea.innerHTML = endpoint.toString();
-    // now.setTime(now.getTime() + 1000*60*60*9);// JSTに変換
+    let now = new Date();
     let diff = endpoint.getTime() - now.getTime();
     // viewarea.innerHTML = parseInt((diff/1000));
     viewarea.innerHTML = (diff/1000).toFixed(2);
