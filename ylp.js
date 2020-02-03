@@ -58,7 +58,7 @@ const view = function() {
 
     // 第一目標
     let endpoint1 = (new Date(2020, 0, 31, 16, 45, 0, 0)).getTime() + (new Date()).getTimezoneOffset()*60*1000;
-    let endpoint2 = (new Date(2020, 1, 13, 14, 50, 0, 0)).getTime() + (new Date()).getTimezoneOffset()*60*1000;
+    let endpoint2 = (new Date(2020, 1, 13, 14, 00, 0, 0)).getTime() + (new Date()).getTimezoneOffset()*60*1000;
     let endpoint3 = (new Date(2020, 1, 13, 16, 30, 0, 0)).getTime() + (new Date()).getTimezoneOffset()*60*1000;
 
     if (now < endpoint1) {
