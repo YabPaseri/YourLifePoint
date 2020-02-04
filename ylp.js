@@ -56,7 +56,6 @@ const view = function() {
     // 現在標準時時間
     let now = ((new Date()).getTime()) + (new Date()).getTimezoneOffset()*60*1000;
 
-    // 第一目標
     let endpoint1 = (new Date(2020, 0, 31, 16, 45, 0, 0)).getTime() + (new Date()).getTimezoneOffset()*60*1000; // 提出
     let endpoint2 = (new Date(2020, 1, 13, 14, 50, 0, 0)).getTime() + (new Date()).getTimezoneOffset()*60*1000; // マイコン
     let endpoint3 = (new Date(2020, 1, 13, 15, 5, 0, 0)).getTime() + (new Date()).getTimezoneOffset()*60*1000; // 休憩
